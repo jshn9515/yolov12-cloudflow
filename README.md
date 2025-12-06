@@ -47,12 +47,12 @@ This API allows users to query their past inference runs. The workflow is as fol
 - Python 3.13 for the Lambda functions
 - Ultralytics YOLOv12 models and dependencies
 
-### Local deployment
+### Running locally
 
 Clone the repository:
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/jshn9515/yolov12-cloudflow.git
 ```
 
 #### Web Interface
