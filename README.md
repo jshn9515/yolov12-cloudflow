@@ -105,7 +105,7 @@ Deployment parameters are stored in `samconfig.toml` and may be modified as need
 |    CDN & Edge    |             Amazon CloudFront              |
 |     Storage      |            Amazon S3 + DynamoDB            |
 |    Deployment    |       AWS SAM + ECR + CloudFormation       |
-|  Authentication  |               Amazon Cognito               |
+|  Authentication  |            Amazon Cognito + SNS            |
 |     Security     |     AWS WAF (Web Application Firewall)     |
 |    Monitoring    |             Amazon CloudWatch              |
 | Image Processing |               NumPy + Pillow               |
