@@ -1,0 +1,50 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: |
+  python3.13
+  Sample SAM Template for yolov12 cloud-computing query
+
+Resources:
+  Yolov12HttpApi:
+    Type: AWS::Serverless::HttpApi
+    Properties:
+      CorsConfiguration:
+        AllowOrigins:
+          - https://dv0l1l3woumqj.cloudfront.net
+        AllowHeaders:
+          - '*'
+        AllowMethods:
+          - GET
+          - POST
+          - OPTIONS
+        MaxAge: 600
+
+  QueryEndpoint:
+    Type: AWS::Serverless::Function
+    Metadata:
+      Dockerfile: Dockerfile
+      DockerContext: ./app
+    Properties:
+      PackageType: Image
+      MemorySize: 512
+      Timeout: 60
+      ImageConfig:
+        Command:
+          - app.lambda_handler
+      Events:
+        ApiEndpoint:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref Yolov12HttpApi
+            Path: /query
+            Method: post
+            TimeoutInMillis: 10000
+      Policies:
+        - AWSLambdaBasicExecutionRole
+        - DynamoDBReadPolicy:
+            TableName: yolov12-records
+
+Outputs:
+  QueryApi:
+    Description: API Gateway endpoint URL for Prod stage for inference function
+    Value: https://dv0l1l3woumqj.cloudfront.net/query
