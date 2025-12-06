@@ -97,17 +97,18 @@ Deployment parameters are stored in `samconfig.toml` and may be modified as need
 
 ## Technology Stack
 
-|      Domain      |             Technologies Used             |
-| :--------------: | :---------------------------------------: |
-|      Model       |     YOLOv12 (PyTorch -> ONNX Runtime)     |
-|     Frontend     |     React + TailwindCSS + TypeScript      |
-|     Backend      | AWS Lambda (Container Image), API Gateway |
-|    CDN & Edge    |             Amazon CloudFront             |
-|     Storage      |           Amazon S3 + DynamoDB            |
-|    Deployment    |      AWS SAM + ECR + CloudFormation       |
-|  Authentication  |              Amazon Cognito               |
-|     Security     |    AWS WAF (Web Application Firewall)     |
-| Image Processing |              NumPy + Pillow               |
+|      Domain      |             Technologies Used              |
+| :--------------: | :----------------------------------------: |
+|      Model       |     YOLOv12 (PyTorch -> ONNX Runtime)      |
+|     Frontend     |      React + TailwindCSS + TypeScript      |
+|     Backend      | AWS Lambda (Container Image) + API Gateway |
+|    CDN & Edge    |             Amazon CloudFront              |
+|     Storage      |            Amazon S3 + DynamoDB            |
+|    Deployment    |       AWS SAM + ECR + CloudFormation       |
+|  Authentication  |               Amazon Cognito               |
+|     Security     |     AWS WAF (Web Application Firewall)     |
+|    Monitoring    |             Amazon CloudWatch              |
+| Image Processing |               NumPy + Pillow               |
 
 ## Difficulties Encountered
 
