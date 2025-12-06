@@ -52,7 +52,7 @@ This API allows users to query their past inference runs. The workflow is as fol
 Clone the repository:
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/jshn9515/yolov12-cloudflow.git
 ```
 
 #### Web Interface
