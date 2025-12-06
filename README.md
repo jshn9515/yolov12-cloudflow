@@ -47,7 +47,7 @@ This API allows users to query their past inference runs. The workflow is as fol
 - Python 3.13 for the Lambda functions
 - Ultralytics YOLOv12 models and dependencies
 
-### Local deployment
+### Running locally
 
 Clone the repository:
 
