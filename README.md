@@ -80,7 +80,7 @@ python convert.py
 
 To build and deploy the AWS SAM application, ensure that Docker is installed and running, and that the AWS SAM CLI is properly configured.
 
-Then, navigate to either the y`olov12-inference` or `yolov12-query` directory and run the following commands:
+Then, navigate to either the `yolov12-inference` or `yolov12-query` directory and run the following commands:
 
 ```bash
 sam build
