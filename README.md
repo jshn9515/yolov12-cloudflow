@@ -110,6 +110,10 @@ Deployment parameters are stored in `samconfig.toml` and may be modified as need
 |    Monitoring    |             Amazon CloudWatch              |
 | Image Processing |               NumPy + Pillow               |
 
+## Architecture Diagram
+
+![Architecture Diagram](architecture.png)
+
 ## Difficulties Encountered
 
 - The CloudFront distribution expects static assets in S3 and returns a 403 for unknown paths. Because React Router handles routing on the client, we configured a custom error response to redirect 403 to index.html, enabling proper SPA navigation.
