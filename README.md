@@ -125,6 +125,6 @@ For written justification of technology choices, see [justification.md](justific
 
 ## Known Issues
 
-- Cold start latency for large Lambda container images may cause timeouts, especially for YOLOv12-medium and YOLOv12-large.
+- The maximum time for HTTP is 30 seconds on API Gateway. When the model inference exceeds this limit (especially for larger models), the request times out. A possible solution is to implement asynchronous processing using SQS and SNS.
 - CloudFront rejects `multipart/form-data` requests under certain configurations; API Gateway works when accessed directly.
 - The "Sign out" button in the web interface is not functioning correctly and requires further debugging.
