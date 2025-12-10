@@ -5,6 +5,7 @@ on:
     branches: [ "main" ]
     paths:
       - 'yolov12-inference/app/**'
+  workflow_dispatch:
 
 env:
   AWS_REGION: us-east-1

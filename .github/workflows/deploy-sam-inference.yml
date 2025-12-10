@@ -6,6 +6,7 @@ on:
     paths:
       - 'yolov12-inference/template.yaml'
       - 'yolov12-inference/samconfig.toml'
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
