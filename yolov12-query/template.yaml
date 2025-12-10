@@ -1,4 +1,4 @@
-AWSTemplateFormatVersion: '2010-09-09'
+AWSTemplateFormatVersion: "2010-09-09"
 Transform: AWS::Serverless-2016-10-31
 Description: |
   Sample SAM Template for yolov12 cloud-computing query
@@ -11,7 +11,7 @@ Resources:
         AllowOrigins:
           - https://dv0l1l3woumqj.cloudfront.net
         AllowHeaders:
-          - '*'
+          - "*"
         AllowMethods:
           - GET
           - POST
@@ -46,5 +46,5 @@ Resources:
 
 Outputs:
   QueryApi:
-    Description: API Gateway endpoint URL for Prod stage for inference function
+    Description: API Gateway endpoint URL for query stage for query function
     Value: !Sub "https://${Yolov12HttpApi}.execute-api.${AWS::Region}.amazonaws.com/query"
