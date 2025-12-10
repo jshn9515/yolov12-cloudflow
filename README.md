@@ -3,7 +3,7 @@
 Welcome to the YOLOv12 Cloud Computing Project! This repository contains the codebase and infrastructure required to deploy YOLOv12 object detection models in a **fully serverless AWS environment**. The system supports real-time image uploads, model inference, result visualization, and historical query functionality.
 
 - Project website: <https://dv0l1l3woumqj.cloudfront.net>
-- YouTube demo: <https://youtu.be/example>
+- YouTube demo: <https://www.youtube.com/watch?v=snyP_kN4RhE>
 
 This is the final project for CS 2060 at University of Pittsburgh, Fall 2025.
 
