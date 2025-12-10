@@ -110,6 +110,8 @@ Deployment parameters are stored in `samconfig.toml` and may be modified as need
 |    Monitoring    |             Amazon CloudWatch              |
 | Image Processing |               NumPy + Pillow               |
 
+For written justification of technology choices, see [justification.md](justification.md).
+
 ## Architecture Diagram
 
 ![Architecture Diagram](architecture.png)
