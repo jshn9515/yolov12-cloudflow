@@ -24,6 +24,7 @@ Resources:
       Dockerfile: Dockerfile
       DockerContext: ./app
     Properties:
+      FunctionName: yolov12-query
       PackageType: Image
       MemorySize: 512
       Timeout: 60
