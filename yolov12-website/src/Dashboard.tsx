@@ -92,7 +92,7 @@ export default function Dashboard({ userEmail, onSignOut }: DashboardProps) {
       formData.append("model", model);
 
       const res = await fetch(
-        "https://7o2rwsl0yk.execute-api.us-east-1.amazonaws.com/inference",
+        "https://58xlskbxpg.execute-api.us-east-1.amazonaws.com/inference",
         {
           method: "POST",
           body: formData,
