@@ -40,6 +40,7 @@ jobs:
 
     - name: SAM Build
       run: |
+        cd yolov12-query
         sam build --use-container
 
     - name: SAM Deploy
