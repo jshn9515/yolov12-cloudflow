@@ -4,6 +4,7 @@ Welcome to the YOLOv12 Cloud Computing Project! This repository contains the cod
 
 - Project website: <https://dv0l1l3woumqj.cloudfront.net>
 - YouTube demo: <https://www.youtube.com/watch?v=snyP_kN4RhE>
+- Github repository: <https://github.com/jshn9515/yolov12-cloudflow>
 
 This is the final project for CS 2060 at University of Pittsburgh, Fall 2025.
 
