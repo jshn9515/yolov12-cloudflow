@@ -45,6 +45,7 @@ jobs:
 
     - name: SAM Deploy
       run: |
+        cd yolov12-query
         sam deploy \
           --stack-name $STACK_NAME \
           --region $AWS_REGION \
