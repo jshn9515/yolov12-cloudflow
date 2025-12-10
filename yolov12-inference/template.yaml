@@ -1,7 +1,6 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: |
-  python3.13
   Sample SAM Template for yolov12 cloud-computing inference
 
 Resources:
@@ -51,4 +50,4 @@ Resources:
 Outputs:
   InferenceApi:
     Description: API Gateway endpoint URL for Prod stage for inference function
-    Value: https://dv0l1l3woumqj.cloudfront.net/inference
+    Value: !Sub "https://${Yolov12HttpApi}.execute-api.${AWS::Region}.amazonaws.com/inference"
