@@ -38,7 +38,7 @@ Resources:
             ApiId: !Ref Yolov12HttpApi
             Path: /inference
             Method: post
-            TimeoutInMillis: 20000
+            TimeoutInMillis: 60000
       Policies:
         - AWSLambdaBasicExecutionRole
         - S3WritePolicy:
