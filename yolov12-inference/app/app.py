@@ -174,7 +174,7 @@ def lambda_handler(event: dict[str, Any], context: object):
             'file_id': file_id,  # sort key
             'source': file_name,
             'model': model_name,
-            'status': 'complete' if runtime <= 20000 else 'timeout',
+            'status': 'complete' if runtime <= 60000 else 'timeout',
             'url': f'https://{BucketName}.s3.amazonaws.com/upload/{file_name}.png',
             'runtime': runtime,
             'timestamp': timestamp.strftime('%Y-%m-%dT%H:%M:%SZ'),
