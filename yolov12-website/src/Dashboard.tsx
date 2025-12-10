@@ -41,7 +41,7 @@ export default function Dashboard({ userEmail, onSignOut }: DashboardProps) {
   async function fetchHistory() {
     try {
       const res = await fetch(
-        "https://046s03slp9.execute-api.us-east-1.amazonaws.com/query",
+        "https://95iva13c2d.execute-api.us-east-1.amazonaws.com/query",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -92,7 +92,7 @@ export default function Dashboard({ userEmail, onSignOut }: DashboardProps) {
       formData.append("model", model);
 
       const res = await fetch(
-        "https://58xlskbxpg.execute-api.us-east-1.amazonaws.com/inference",
+        "https://esh5kudyxk.execute-api.us-east-1.amazonaws.com/inference",
         {
           method: "POST",
           body: formData,
